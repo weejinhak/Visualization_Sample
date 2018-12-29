@@ -1,0 +1,17 @@
+{
+  "name": "visualization_samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "compute-pcorr": "^1.0.0",
+    "correlation-rank": "^0.2.0",
+    "lodash": "^4.17.10"
+  }
+}

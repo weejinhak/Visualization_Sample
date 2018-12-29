@@ -1,0 +1,70 @@
+{
+  "name": "TOPICS",
+  "children": [
+    {
+      "name": "Topic A",
+      "children": [
+        {
+          "name": "Sub A1",
+          "children": [
+            {
+              "name": "Sub A13",
+              "size": 1,
+              "count": 1
+            },
+            {
+              "name": "Sub A14",
+              "size": 1,
+              "count": 1
+            },
+            {
+              "name": "Sub A15",
+              "size": 1,
+              "count": 1
+            }
+          ]
+        },
+        {
+          "name": "Sub A2",
+          "size": 1,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "Topic B",
+      "children": [
+        {
+          "name": "Sub B1",
+          "size": 1,
+          "count": 3
+        },
+        {
+          "name": "Sub B2",
+          "size": 1,
+          "count": 4
+        },
+        {
+          "name": "Sub B3",
+          "size": 1,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "name": "Topic C",
+      "children": [
+        {
+          "name": "Sub A1",
+          "size": 1,
+          "count": 6
+        },
+        {
+          "name": "Sub A2",
+          "size": 1,
+          "count": 7
+        }
+      ]
+    }
+  ]
+}

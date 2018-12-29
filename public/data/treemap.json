@@ -1,0 +1,81 @@
+{
+  "name": "diet",
+  "children": [
+    {
+      "name": "food",
+      "children": [
+        {
+          "name": "meat",
+          "children": [
+            {
+              "name": "child-1-1",
+              "ground": "10",
+              "building": "20",
+              "cash": "300",
+              "total": "330"
+            },
+            {
+              "name": "child-1-1-0",
+              "children": [
+                {
+                  "name": "child-1-1-1",
+                  "ground": "10",
+                  "building": "20",
+                  "cash": "300",
+                  "total": "330"
+                },
+                {
+                  "name": "child-1-1-4",
+                  "ground": "10",
+                  "building": "20",
+                  "cash": "300",
+                  "total": "330"
+                },
+                {
+                  "name": "child-1-1-6",
+                  "ground": "10",
+                  "building": "20",
+                  "cash": "300",
+                  "total": "330"
+                },
+                {
+                  "name": "child-1-1-2",
+                  "ground": "10",
+                  "building": "20",
+                  "cash": "300",
+                  "total": "330"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pesonB",
+          "ground": "10",
+          "building": "20",
+          "cash": "300",
+          "total": "330"
+        }
+      ]
+    },
+    {
+      "name": "drink",
+      "children": [
+        {
+          "name": "pesonC",
+          "ground": "200",
+          "building": "10",
+          "cash": "100",
+          "total": "310"
+        },
+        {
+          "name": "pesonD",
+          "ground": "50",
+          "building": "30",
+          "cash": "10",
+          "total": "90"
+        }
+      ]
+    }
+  ]
+}
