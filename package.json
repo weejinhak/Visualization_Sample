@@ -1,17 +1,16 @@
 {
-  "name": "visualization_samples",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "visualization-sample",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.26.0",
-    "compute-pcorr": "^1.0.0",
-    "correlation-rank": "^0.2.0",
-    "lodash": "^4.17.10"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
