@@ -15,4 +15,4 @@ RUN npm install
 
 # production stage
 EXPOSE 80
-CMD ["npm", "app.js"]
+CMD ["npm start"]
