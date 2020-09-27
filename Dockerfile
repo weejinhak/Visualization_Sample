@@ -1,15 +1,4 @@
-
-# develop stage
-FROM node:alpine as develop-stage
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-
-# build stage
-FROM develop-stage as build-stage
-RUN npm starts
-
-# production stage
+FROM nginx:alpine
+COPY . /usr/share/nginx/html/
 EXPOSE 80
-CMD ["npm", "start"]
+CMD ["nginx","-g","daemon off;"]
