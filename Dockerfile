@@ -8,7 +8,6 @@ COPY . .
 
 # build stage
 FROM develop-stage as build-stage
-RUN express
 RUN npm run build
 
 # production stage
