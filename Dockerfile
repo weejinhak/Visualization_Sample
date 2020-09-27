@@ -8,7 +8,7 @@ COPY . .
 
 # build stage
 FROM develop-stage as build-stage
-RUN npm run build
+RUN npm starts
 
 # production stage
 EXPOSE 80
