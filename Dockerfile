@@ -1,4 +1,9 @@
-FROM node:alpine
-COPY . /usr/share/app/
+FROM node:10
+WORKDIR /workspace
+COPY package*.json ./
+RUN npm install
+COPY . .
+
 EXPOSE 80
-CMD ["npm","start"]
+
+CMD [ "node", "index.js" ]
