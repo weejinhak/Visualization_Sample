@@ -1,11 +1,20 @@
-#어떤 이미지로부터 새로운 이미지를 생성할지를 지정
-FROM node:6.13.4
+# develop stage
+FROM node:alpine as develop-stage
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
 
 #Dockerfile 을 생성/관리하는 사람
 MAINTAINER JinHak Wee <wlsgkr91@gmail.com>
 
-#가상 머신에 오픈할 포트
-EXPOSE 80
 
-#컨테이너에서 실행될 명령을 지정
-CMD ["npm", "start"]
+# build stage
+FROM develop-stage as build-stage
+RUN npm run build
+
+# production stage
+FROM nginx:alpine as production-stage
+COPY --from=build-stage /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
