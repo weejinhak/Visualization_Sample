@@ -1,8 +1,8 @@
 #어떤 이미지로부터 새로운 이미지를 생성할지를 지정
-FROM node:6.13.4
+FROM node:alpine as develop-stage
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 #Dockerfile 을 생성/관리하는 사람
 MAINTAINER JinHak Wee <wlsgkr91@gmail.com>
